@@ -1,0 +1,15 @@
+{
+  "name": "parsing-request-bodies",
+  "version": "1.0.0",
+  "description": "its a complete Node guide",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "chandan",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
