@@ -4,12 +4,19 @@ const express = require('express');
 // const bodyParser = require('body-parser'); now part of express
 
 const app = express();
+const expressHbs = require('express-handlebars');
 
-
-app.set('view engine', 'pug');
+// app.set('view engine', 'pug');
+app.engine('hbs', expressHbs({
+    defaultLayout: 'main-layout.hbs', // with this line we can remove the main-layout.hbs file
+    extname: 'hbs'
+  }));
+//inititalize express handlebars engine
+app.set('view engine', 'hbs');
 
 const adminData = require('./routes/admin');
 const shopRouter = require('./routes/shop');
+const { ppid } = require('process');
 
 app.use(express.urlencoded({extended: true}));
 app.use(express.static(path.join(__dirname, 'public')))
