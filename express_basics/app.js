@@ -6,7 +6,7 @@ const express = require('express');
 const app = express();
 
 
-app.set('view engine', 'pug');
+app.set('view engine', 'ejs');
 
 const adminData = require('./routes/admin');
 const shopRouter = require('./routes/shop');
