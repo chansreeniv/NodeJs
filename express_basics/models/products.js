@@ -47,12 +47,12 @@ module.exports = class Product {
     });
   }
 
- static delete(id) {
+  static delete(id) {
     getProductsFromFile((products) => {
-      const product = products.find(p => p.id === id);
+      const product = products.find((p) => p.id === id);
       const Updatedproducts = products.filter((p) => p.id !== id);
-      fs.writeFile(p, JSON.stringify(Updatedproducts), err => {
-        console.log(err)
+      fs.writeFile(p, JSON.stringify(Updatedproducts), (err) => {
+        console.log(err);
         if (!err) {
           Cart.deleteProduct(id, product.price);
         }
