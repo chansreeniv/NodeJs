@@ -1,1 +1,23 @@
-[{"title":"page123","imageUrl":"https://1.bp.blogspot.com/-k4Qlgv8-a9I/XCxoL50VgtI/AAAAAAAAD70/WKxmj10EaiIK_0lK1oBk0pvuRD3CpfYfwCLcBGAs/s1600/Parting%2Bof%2Bthe%2BStrangers%2BImage.jpg","description":"the indian books asdf","price":"500"},{"title":"books2","imageUrl":"https://images-na.ssl-images-amazon.com/images/I/61aDnsmghfL.jpg","description":"this is a applby book","price":"250"}]
+[
+  {
+    "id": "5",
+    "title": "Psycology Today",
+    "imageUrl": "https://cdn2.psychologytoday.com/assets/styles/magazine_384x504/public/field_magazine_cover/2017-011_0.png.jpg?itok=XzwomVKv",
+    "description": "how to beat comparison ",
+    "price": "1500"
+  },
+  {
+    "id": "0.15959344216199645",
+    "title": "Bazaar",
+    "imageUrl": "https://www.fashiongonerogue.com/wp-content/uploads/2015/02/margot-robbie-harpers-bazaar-uk-april-2015-01.jpg",
+    "description": "margot-robbie-harpers-bazaar-uk-april-2015-01",
+    "price": "2500"
+  },
+  {
+    "id": "0.5347742641808328",
+    "title": "test",
+    "imageUrl": "https://media.glamour.com/photos/5695ea1916d0dc3747eea521/master/w_1600/magazine-2009-03-19-glamour-june-2011-main.jpg",
+    "description": "glamour june 2011",
+    "price": "1500"
+  }
+]
