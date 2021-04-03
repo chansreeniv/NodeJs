@@ -4,6 +4,7 @@ const express = require('express');
 // const bodyParser = require('body-parser'); now part of express
 
 const app = express();
+const db = require('./util/database');
 
 
 app.set('view engine', 'ejs');
@@ -19,6 +20,8 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.use('/admin',adminRouter);
 
 app.use(shopRouter);
+
+// db.execute('select * from products').then(result => console.log(result)).catch(err => console.log(err));
 
 app.use(errorController.pageNotFound);
 
